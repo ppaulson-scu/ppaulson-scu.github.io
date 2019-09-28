@@ -1,15 +1,23 @@
 /* Header */
 h1 {
 	text-align: left;
+	vertical-align: center;
 	font-size: 20pt;
-	margin-bottom: 4px;
+	background-color: darkblue;
+	color: white;
+	padding: 0px 20px;
+}
+
+.title {
+	display: inline-block;
+	padding: 3px;
 }
 
 /* Buttons */
-.button {
+.nav_button {
 	text-align: center;
 	font-size: 12pt;
-	background-color: mediumblue;
+	background-color: darkblue;
 	padding: 10px 20px;
 	cursor: pointer;
 	text-align: center;
@@ -17,6 +25,6 @@ h1 {
 	color: white;
 }
 
-.button:hover {
-	background-color: darkblue;
+.nav_button:hover {
+	background-color: mediumblue;
 }
