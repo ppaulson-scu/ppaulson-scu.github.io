@@ -8,6 +8,10 @@ h1 {
 	padding: 0px 20px;
 }
 
+* {
+	font-family: "Arial";
+}
+
 .title {
 	display: inline-block;
 	padding: 3px;
@@ -28,3 +32,22 @@ h1 {
 .nav_button:hover {
 	background-color: mediumblue;
 }
+
+/* Download Link Button */
+a.nav_download:link, a.nav_download:visited {
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12pt;
+	background-color: darkblue;
+	padding: 10px 20px;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	color: white;
+}
+
+a.nav_download:hover, a.nav_download:active {
+	background-color: mediumblue
+}
+	
