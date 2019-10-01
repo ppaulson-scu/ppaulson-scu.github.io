@@ -1,26 +1,20 @@
-'use strict';
-
 const e = React.createElement;
 
 class GridSquare extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = { start:false, goal:false, explored:false, wall:false }
-	}
 	
 	render() {
-			return (
-				<button className="square">
-					{ } 
-				</button>
-			);
+		return (
+			<button className="square">
+				{ this.props.value } 
+			</button>
+		);
 	}
 }
 
 class MapGrid extends React.Component {
 
 	renderSquare(x, y){
-		return <GridSquare />;
+		return <GridSquare value={x + 20*y} />;
 
 	render() {
 		var grid = [];
@@ -31,7 +25,7 @@ class MapGrid extends React.Component {
 			}
 			grid.push(row);
 		}
-		return tbody(grid)
+		return tbody(grid);
 			
   }
 }
